@@ -1,8 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using TharawatGateway.Domain.GeneralOprations;
-using TharawatGateway.Infrastructure.Repositories;
-using TharawatGateway.Infrastructure.GeneralOprationsImp;
-using TharawatGateway.Application.IRepositories;
+using TharawatGateway.Domain.GeneralRepository;
+using TharawatGateway.Infrastructure.GeneralRepositoryImp;
 using TharawatGateway.Application.IServices;
 using TharawatGateway.Application.Services;
 
@@ -13,7 +11,7 @@ namespace TharawatGateway.Infrastructure
         public static IServiceCollection AddInfrastructureDependencies(this IServiceCollection services)
         {
             // Register Repositories implementation
-            services.AddScoped<IProductRepository, ProductRepository>();
+            /*services.AddScoped<IProductRepository, ProductRepository>();
 
             services.AddScoped<ICityRepository, CityRepository>();
             
@@ -35,14 +33,14 @@ namespace TharawatGateway.Infrastructure
 
             services.AddScoped<IInvoiceRepository, InvoiceRepository>();
 
-            services.AddScoped<IPurposeRepository, PurposeRepository>();
+            services.AddScoped<IPurposeRepository, PurposeRepository>();*/
 
             // ===================================================================
 
             services.AddScoped<IProductService, ProductService>();
 
             // Register GenericRepository implementation
-            services.AddScoped(typeof(BaseInterface<>), typeof(BaseInterfaceImp<>));
+            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 
             return services;
         }

@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TharawatGateway.Domain.Entities;
 
-namespace TharawatGateway.Domain.GeneralOprations
+namespace TharawatGateway.Domain.GeneralRepository
 {
-    public interface BaseInterface<T> where T : class
+    public interface IRepository<T> where T : class
     {
+        Task<List<T>> GetListAsync();
         Task<T> GetByIdAsync(int? id);
         Task<T> AddAsync(T entity);
         Task UpdateAsync(T entity);

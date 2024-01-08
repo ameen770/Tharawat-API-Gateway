@@ -4,12 +4,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TharawatGateway.Domain.GeneralOprations;
+using TharawatGateway.Domain.Entities;
+using TharawatGateway.Domain.GeneralRepository;
 using TharawatGateway.Infrastructure.Context;
 
-namespace TharawatGateway.Infrastructure.GeneralOprationsImp
+namespace TharawatGateway.Infrastructure.GeneralRepositoryImp
 {
-    public class BaseInterfaceImp<T> : Domain.GeneralOprations.BaseInterface<T> where T : class
+    public class Repository<T> : IRepository<T> where T : class
     {
         #region Vars / Props
 
@@ -18,7 +19,7 @@ namespace TharawatGateway.Infrastructure.GeneralOprationsImp
         #endregion
 
         #region Constructor(s)
-        public BaseInterfaceImp(ApplicationDbContext dbContext)
+        public Repository(ApplicationDbContext dbContext)
         {
             _dbContext = dbContext;
         }
@@ -48,6 +49,11 @@ namespace TharawatGateway.Infrastructure.GeneralOprationsImp
         public virtual async Task<T> GetByIdAsync(int? id)
         {
             return await _dbContext.Set<T>().FindAsync(id);
+        }
+
+        public virtual async Task<List<T>> GetListAsync()
+        {
+            return await _dbContext.Set<T>().ToListAsync();
         }
 
         public IQueryable<T> GetTableNoTracking()
