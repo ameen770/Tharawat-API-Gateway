@@ -18,8 +18,8 @@ namespace TharawatGateway.Application.Services
         #region Fields
         //private readonly IProductRepository _productRepository;
         private readonly IRepository<Product> _productRepo;
+        public ResponseHandler responseHandler = new ResponseHandler();
 
-    
         #endregion
 
         #region Constractors
@@ -31,11 +31,11 @@ namespace TharawatGateway.Application.Services
 
 
         #region Handles Functions
-        public async Task<string> AddAsync(Product product)
+        public async Task<Response<string>> AddAsync(Product product)
          {
              // await _productRepository.AddAsync(product);
              await _productRepo.AddAsync(product);
-             return "Success";
+             return responseHandler.Created("");
          }
 
          public async Task<string> DeleteAsync(Product product)
@@ -74,11 +74,11 @@ namespace TharawatGateway.Application.Services
              return product;
          }
 
-         public async Task<List<Product>> GetProductsLists()
+         public async Task<Response<List<Product>>> GetProductsLists()
          {
              var product = await _productRepo.GetListAsync();
              //var product = await _productRepository.GetProductsListAsync();
-             return product;
+             return responseHandler.Success(product);
          }
 
         public Task<bool> IsEntitytIdExist(int productID)
