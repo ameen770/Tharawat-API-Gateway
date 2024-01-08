@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TharawatGateway.BasesHandlers;
-using TharawatGateway.Domain.Entities;
-using TharawatGateway.Domain.GeneralOprations;
+﻿using TharawatGateway.Domain.Entities;
 
 namespace TharawatGateway.Application.IServices
 {
@@ -19,5 +12,16 @@ namespace TharawatGateway.Application.IServices
         public Task<bool> IsNameExistExcludeSelf(string name, int id);
         public Task<string> DeleteAsync(Product product);
         public Task<bool> IsProductIdExist(int productId);
+
+        /* Task<List<Product>> GetEntitiesLists();
+         Task<Product> GetEntitytByIds(int? id);
+         Task<string> AddAsync(Product product);
+         Task<bool> IsNameExist(string name);
+         Task<string> EditAsync(Product product);
+         Task<bool> IsNameExistExcludeSelf(string name, int id);
+         Task<string> DeleteAsync(Product product);
+         Task<bool> IsEntitytIdExist(int productID);
+ */
     }
 }
+
