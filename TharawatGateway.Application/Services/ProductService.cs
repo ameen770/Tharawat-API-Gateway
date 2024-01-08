@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Localization;
 using Serilog;
 using System;
 using System.Collections.Generic;
@@ -7,7 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using TharawatGateway.Application.IRepositories;
 using TharawatGateway.Application.IServices;
+using TharawatGateway.BasesHandlers;
 using TharawatGateway.Domain.Entities;
+using TharawatGateway.Resources;
 
 namespace TharawatGateway.Application.Services
 {
@@ -15,20 +18,24 @@ namespace TharawatGateway.Application.Services
     {
         #region Fields
         private readonly IProductRepository _productRepository;
+        private readonly IStringLocalizer<SharedResources> _localizer;
+        public ResponseHandler response = new ResponseHandler();
         #endregion
 
         #region Constractors
-        public ProductService(IProductRepository productRepository)
+        public ProductService(IProductRepository productRepository, IStringLocalizer<SharedResources> localizer)
         {
             _productRepository = productRepository;
+            _localizer = localizer;
         }
         #endregion
 
         #region Handles Functions
-        public async Task<string> AddAsync(Product product)
+        public async Task<Response<string>> AddAsync(Product product)
         {
             await _productRepository.AddAsync(product);
-            return "Success";
+            //return "Success";
+            return response.Created("");
         }
 
         public async Task<string> DeleteAsync(Product product)
@@ -62,10 +69,10 @@ namespace TharawatGateway.Application.Services
             return product;
         }
 
-        public async Task<List<Product>> GetProductsLists()
+        public async Task<Response<List<Product>>> GetProductsLists()
         {
             var product = await _productRepository.GetProductsListAsync();
-            return product;
+            return response.Success(product);
         }
 
         public async Task<bool> IsNameExist(string name)

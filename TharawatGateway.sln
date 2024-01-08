@@ -5,15 +5,17 @@ VisualStudioVersion = 17.5.33414.496
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7054831D-9C63-4BC6-9556-12BBD1C0E76F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TharawatGateway.Domain", "TharawatGateway.Domain\TharawatGateway.Domain.csproj", "{7C6A7C9E-2AC6-40DE-9ECB-34E4FF13E981}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TharawatGateway.Domain", "TharawatGateway.Domain\TharawatGateway.Domain.csproj", "{7C6A7C9E-2AC6-40DE-9ECB-34E4FF13E981}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TharawatGateway.Application", "TharawatGateway.Application\TharawatGateway.Application.csproj", "{555A3CCE-C9C0-4585-A2DC-52E3556B358E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TharawatGateway.Application", "TharawatGateway.Application\TharawatGateway.Application.csproj", "{555A3CCE-C9C0-4585-A2DC-52E3556B358E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TharawatGateway.Infrastructure", "TharawatGateway.Infrastructure\TharawatGateway.Infrastructure.csproj", "{55D329FF-B7C2-4B3B-8672-03E992ED18DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TharawatGateway.Infrastructure", "TharawatGateway.Infrastructure\TharawatGateway.Infrastructure.csproj", "{55D329FF-B7C2-4B3B-8672-03E992ED18DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TharawatGateway.GatewayAPI", "TharawatGateway.GatewayAPI\TharawatGateway.GatewayAPI.csproj", "{BC61D05A-F0A5-4865-B537-80854EA934D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TharawatGateway.GatewayAPI", "TharawatGateway.GatewayAPI\TharawatGateway.GatewayAPI.csproj", "{BC61D05A-F0A5-4865-B537-80854EA934D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TharawatGateway.WebAPI", "TharawatGateway.WebAPI\TharawatGateway.WebAPI.csproj", "{D6E955AC-7096-455A-BC66-F767F9923365}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TharawatGateway.WebAPI", "TharawatGateway.WebAPI\TharawatGateway.WebAPI.csproj", "{D6E955AC-7096-455A-BC66-F767F9923365}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utiltie", "Utiltie\Utiltie.csproj", "{D8EB5C1E-7BA3-4102-939A-F4E61A0D9641}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{D6E955AC-7096-455A-BC66-F767F9923365}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6E955AC-7096-455A-BC66-F767F9923365}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6E955AC-7096-455A-BC66-F767F9923365}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8EB5C1E-7BA3-4102-939A-F4E61A0D9641}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8EB5C1E-7BA3-4102-939A-F4E61A0D9641}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8EB5C1E-7BA3-4102-939A-F4E61A0D9641}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8EB5C1E-7BA3-4102-939A-F4E61A0D9641}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

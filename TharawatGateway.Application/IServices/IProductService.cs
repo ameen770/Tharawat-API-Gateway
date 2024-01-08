@@ -10,9 +10,9 @@ namespace TharawatGateway.Application.IServices
 {
     public interface IProductService
     {
-        public Task<List<Product>> GetProductsLists();
+        public Task<Response<List<Product>>> GetProductsLists();
         public Task<Product> GetProductByIds(int? id);
-        public Task<string> AddAsync(Product product);
+        public Task<Response<string>> AddAsync(Product product);
         public Task<bool> IsNameExist(string name);
         public Task<string> EditAsync(Product product);
         public Task<bool> IsNameExistExcludeSelf(string name, int id);

@@ -4,19 +4,23 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <Title>Response Messages</Title>
+    <Authors>Ameen Al-Ya'ari</Authors>
+    <Company>Tharawat</Company>
+    <PackageId>Responses</PackageId>
+    <Product>Responses</Product>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <BaseOutputPath>C:\Users\Ameen\.nuget</BaseOutputPath>
+    <RootNamespace>Responses</RootNamespace>
+    <AssemblyName>Responses</AssemblyName>
+    <NoWin32Manifest>true</NoWin32Manifest>
   </PropertyGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\TharawatGateway.Domain\TharawatGateway.Domain.csproj" />
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="12.0.1" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
     <PackageReference Include="MediatR" Version="12.2.0" />
     <PackageReference Include="Microsoft.Extensions.Localization" Version="7.0.14" />
-    <PackageReference Include="Responses" Version="1.0.0" />
-    <PackageReference Include="Serilog" Version="3.1.1" />
   </ItemGroup>
 
 </Project>

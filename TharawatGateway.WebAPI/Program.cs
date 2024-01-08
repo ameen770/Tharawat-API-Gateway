@@ -15,7 +15,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 #region Dependency Injection
-builder.Services.AddInfrastructureDependencies().AddApplicationDependencies();
+builder.Services.AddInfrastructureDependencies().AddApplicationDependencies().AddUtiltieDependencies();
 builder.Services.AddAutoMapper(typeof(ModelsMapping));
 #endregion
 
