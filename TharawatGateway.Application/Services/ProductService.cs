@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TharawatGateway.Application.IServices;
-using TharawatGateway.BasesHandlers;
 using TharawatGateway.Domain.Entities;
 using TharawatGateway.Domain.GeneralRepository;
+using TharawatGateway.ResponseLib.BasesHandlers;
 
 namespace TharawatGateway.Application.Services
 {

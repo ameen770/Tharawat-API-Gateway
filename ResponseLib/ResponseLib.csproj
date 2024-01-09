@@ -1,19 +1,16 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <Title>Response Messages</Title>
+    <Title>ResponseLib</Title>
     <Authors>Ameen Al-Ya'ari</Authors>
     <Company>Tharawat</Company>
-    <PackageId>Responses</PackageId>
-    <Product>Responses</Product>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <BaseOutputPath>C:\Users\train44\source\repos\NuGet</BaseOutputPath>
-    <RootNamespace>Responses</RootNamespace>
-    <AssemblyName>Responses</AssemblyName>
-    <NoWin32Manifest>true</NoWin32Manifest>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>ResponseLib</PackageId>
+    <Product>ResponseLib</Product>
   </PropertyGroup>
 
   <ItemGroup>

@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TharawatGateway.GatewayAPI"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TharawatGateway.WebAPI", "TharawatGateway.WebAPI\TharawatGateway.WebAPI.csproj", "{D6E955AC-7096-455A-BC66-F767F9923365}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utiltie", "Utiltie\Utiltie.csproj", "{D8EB5C1E-7BA3-4102-939A-F4E61A0D9641}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResponseLib", "ResponseLib\ResponseLib.csproj", "{23044A64-1791-45AF-9399-0A7244D780EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,10 +43,10 @@ Global
 		{D6E955AC-7096-455A-BC66-F767F9923365}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6E955AC-7096-455A-BC66-F767F9923365}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6E955AC-7096-455A-BC66-F767F9923365}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D8EB5C1E-7BA3-4102-939A-F4E61A0D9641}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D8EB5C1E-7BA3-4102-939A-F4E61A0D9641}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D8EB5C1E-7BA3-4102-939A-F4E61A0D9641}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D8EB5C1E-7BA3-4102-939A-F4E61A0D9641}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23044A64-1791-45AF-9399-0A7244D780EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23044A64-1791-45AF-9399-0A7244D780EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23044A64-1791-45AF-9399-0A7244D780EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23044A64-1791-45AF-9399-0A7244D780EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

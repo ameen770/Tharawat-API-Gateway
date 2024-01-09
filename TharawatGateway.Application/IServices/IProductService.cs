@@ -1,5 +1,5 @@
-﻿using TharawatGateway.BasesHandlers;
-using TharawatGateway.Domain.Entities;
+﻿using TharawatGateway.Domain.Entities;
+using TharawatGateway.ResponseLib.BasesHandlers;
 
 namespace TharawatGateway.Application.IServices
 {
